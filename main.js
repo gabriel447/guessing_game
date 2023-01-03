@@ -15,7 +15,7 @@ function handleTryClick(event) {
         screen1.classList.add("hide")
         screen2.classList.remove("hide")
 
-        document.querySelector(".screen2 h2").innerText =`acertou em ${xAttempts} tentativas`
+        screen2.querySelector("h2").innerText =`acertou em ${xAttempts} tentativas`
     }
 
     inputNumber.value = ""
@@ -31,5 +31,6 @@ btnTry.addEventListener('click', handleTryClick)
 btnReset.addEventListener('click', function() {
     screen1.classList.remove("hide")
     screen2.classList.add("hide")
+    xAttempts = 1
 })
 
