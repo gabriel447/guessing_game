@@ -28,6 +28,7 @@ function handleTryClick(event) {
 function handleResetClick() {
     toggleScreen()
     xAttempts = 1
+    document.location.reload(true);
 }
 
 function toggleScreen() {
